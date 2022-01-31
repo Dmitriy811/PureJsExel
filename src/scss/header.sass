@@ -1,0 +1,29 @@
+@import "mixin"
+@import "variables"
+
+.excel__header
+	position: absolute
+	top: 0
+	right: 0
+	left: 0
+	height: $header_height
+	padding: 8px 4px 0
+	display: flex
+	justify-content: space-between
+	.input
+		margin: 0
+		padding: 2px 7px
+		color: #000
+		border: solid 1px transparent
+		border-radius: 2px
+		font-size: 18px
+		line-height: 22px
+		outline: none
+		height: 20px
+		min-width: 1px
+		&:hover
+			border: solid 1px $border_color
+		&:focus
+			border: solid 2px #1a73e8
+	.button
+		@include button(red)
