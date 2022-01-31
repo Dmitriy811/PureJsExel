@@ -1,0 +1,53 @@
+@import "mixin.sass"
+@import "variables.sass"
+
+.excel__table
+	position: absolute
+	left: 0
+	right: 0
+	top: $header_height + $toolbar_height +$form_height
+	overflow-x: auto
+	padding-bottom: 2px
+	.row
+		display: flex
+		height: $row_height
+		min-width: 20px
+		&-info
+			display: flex
+			justify-content: center
+			align-items: center
+			min-width: $info-cell-width
+			height: 100%
+			border: solid 1px $border-color
+			background-color: #f8f9fa
+			border-top: none
+			border-left: none
+		&-data
+			display: flex
+
+	.cell
+		min-width: 40px
+		padding: 5px
+		width: $cell-width
+		height: 100%
+		border: solid 1px #e2e3e3
+		border-top: 0
+		border-left: 0
+		color: #111
+		white-space: nowrap
+		outline: none
+		&.selected
+			border: none
+			outline: solid 2px #3c74ff
+			z-index: 2
+	.colum
+		display: flex
+		justify-content: center
+		align-items: center
+		border: solid 1px $border-color
+		background-color: #f8f9fa
+		border-top: none
+		border-left: none
+		min-width: 40px
+		width: $cell-width
+		height: 100%

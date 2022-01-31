@@ -1,0 +1,15 @@
+@import "mixin.sass"
+@import "variables.sass"
+
+.excel__toolbar
+	position: absolute
+	left: 0
+	right: 0
+	top: $header_height
+	height: $toolbar_height
+	border-top: solid 1px $border-color
+	border-bottom: solid 1px $border-color
+	display: flex
+	padding: 7px 10px
+	.button
+		@include button(green, 20px)
